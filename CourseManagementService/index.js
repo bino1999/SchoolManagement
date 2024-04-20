@@ -1,18 +1,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const productRoute = require('./route/productRoute');
+const courseRoute = require('./route/courseRoute');
 const { connectToDatabase } = require('./config/database');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4100;
 
 // Middleware
 app.use(bodyParser.json());
 app.use(cors()); // Enable CORS for all routes
 
 // Routes
-app.use('/products', productRoute);
+app.use('/course', courseRoute);
 
 // Connect to MongoDB
 connectToDatabase();
