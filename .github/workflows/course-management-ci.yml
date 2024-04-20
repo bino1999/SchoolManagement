@@ -39,7 +39,7 @@ jobs:
       run: docker push binodbandara/coursemanagementservice:${{ github.sha }}
       working-directory: ./CourseManagementService
 
-    # # Add deployment steps here based on your cloud service provider
+    # Uncomment and configure the following step for deployment
     # - name: Deploy to Cloud Service
     #   run: |
     #     # Your deployment commands go here
