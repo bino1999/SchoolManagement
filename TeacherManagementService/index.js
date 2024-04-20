@@ -5,7 +5,7 @@ const teacherRoute = require('./route/teacherRoute');
 const { connectToDatabase } = require('./config/database');
 
 const app = express();
-const PORT = process.env.PORT || 4100;
+const PORT = process.env.PORT || 4050;
 
 // Middleware
 app.use(bodyParser.json());
