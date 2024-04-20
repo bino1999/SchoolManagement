@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const teacherRoute = require('./route/teacherRoute');
+const teacherRoute = require('./routes/teacherRoute');
 const { connectToDatabase } = require('./config/database');
 
 const app = express();
@@ -19,3 +19,6 @@ connectToDatabase();
 
 // Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
+
