@@ -10,3 +10,6 @@ router.put('/:id', teacherController.updateTeacher);
 router.delete('/:id', teacherController.deleteTeacher);
 
 module.exports = router;
+
+
+
