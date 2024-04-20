@@ -7,6 +7,15 @@ on:
       - 'CourseManagementService/**'
       - 'CourseManagementService/Dockerfile'
       - 'CourseManagementService/package*.json'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'CourseManagementService/**'
+      - 'CourseManagementService/Dockerfile'
+      - 'CourseManagementService/package*.json'
+
+# ... rest of your workflow file ...
+
 
 jobs:
   build:
