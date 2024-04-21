@@ -1,4 +1,4 @@
-name: Node.js CI/CD
+name: courseManagement CI/CD
 
 on:
   push:
@@ -12,13 +12,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20' 
+        node-version: '20'
+
     - name: Install dependencies
       run: npm install
       working-directory: ./CourseManagementService
-    - name: Run the application
+
+    - name: Start server
       run: npm start
       working-directory: ./CourseManagementService
+      continue-on-error: true
+
+    - name: Wait for server
+      run: sleep 10m

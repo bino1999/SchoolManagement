@@ -14,6 +14,8 @@ app.use(cors()); // Enable CORS for all routes
 // Routes
 app.use('/teacher', teacherRoute);
 
+
+
 // Connect to MongoDB
 connectToDatabase();
 
