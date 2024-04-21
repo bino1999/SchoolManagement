@@ -1,4 +1,4 @@
-name: courseManagement CI/CD
+name: newTest CI/CD
 
 on:
   push:
