@@ -1,3 +1,4 @@
+// controllers/studentController.js
 const Student = require("../models/studentSchema");
 
 // Controller for creating a new student
@@ -60,3 +61,4 @@ exports.deleteStudent = async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 };
+

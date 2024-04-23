@@ -11,7 +11,7 @@ const studentSchema = new mongoose.Schema({
   },
   adress: {
     type: String,
-    required: true,
+    
   },
   grade: {
     type: String,
