@@ -1,5 +1,5 @@
 # Use an official Node runtime as a parent image
-FROM node:20-alpine
+FROM --platform=linux/arm64 node:alpine
 
 # Set the working directory in the container to /app
 WORKDIR /app

@@ -11,6 +11,11 @@ const PORT = process.env.PORT || 6300;
 app.use(bodyParser.json());
 app.use(cors()); // Enable CORS for all routes
 
+
+// Welcome route
+app.get('/', (req, res) => {
+  res.send("heloo");
+});
 // Routes
 app.use('/course', courseRoute);
 
@@ -24,10 +29,12 @@ app.use((req, res, next) => {
 });
 
 // Logging middleware to log server errors
-app.use((err, req, res, ) => {
+// Logging middleware to log server errors
+app.use((err, req, res, next) => {
   console.error(`[${new Date().toISOString()}] Server error: ${err}`);
   res.status(500).send('Internal Server Error');
 });
+
 
 // Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
