@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Make port 4100 available to the world outside this container
-EXPOSE 4100
+EXPOSE 6300
 
 # Define environment variable for MongoDB URI if needed
 # You can set the default value or pass it during container run

@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const courseRoute = require('./route/courseRoute');
 const { connectToDatabase } = require('./config/database');
+const path = require('path'); // Add this line
 
 const app = express();
 const PORT = process.env.PORT || 6300;
@@ -14,7 +15,7 @@ app.use(cors()); // Enable CORS for all routes
 
 // Welcome route
 app.get('/', (req, res) => {
-  res.send("heloo");
+  res.send('heloo');
 });
 // Routes
 app.use('/course', courseRoute);
