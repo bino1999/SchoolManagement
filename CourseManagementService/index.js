@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 
 // Logging middleware to log server errors
 // Logging middleware to log server errors
-app.use((err, req, res, next) => {
+app.use((err, req, res, ) => {
   console.error(`[${new Date().toISOString()}] Server error: ${err}`);
   res.status(500).send('Internal Server Error');
 });
