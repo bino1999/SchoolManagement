@@ -7,7 +7,7 @@ const nonAcademicStaffRoute = require('./route/nonAcademicStaffRoute');
 const { connectToDatabase } = require('./config/database');
 
 const app = express();
-const PORT = process.env.PORT || 5300;
+const PORT = process.env.PORT || 5500;
 
 app.use(bodyParser.json());
 app.use(cors());
